@@ -6,8 +6,7 @@ describe('Entering name', function() {
    
 
     
-
-    expect(element(by.binding('yourName')).getText()).
-        toEqual('Hello Andrew!'); 
+    var sayHello = element(by.binding('yourName'));
+    expect(sayHello.getText()).toEqual('Hello Andrew!'); 
   });
 });
